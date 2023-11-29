@@ -4,12 +4,19 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+}
+
+body{
+    background:linear-gradient(to bottom, rgb(7, 7, 10), rgb(196, 186, 186));
 }
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .latitude, .longitude {
@@ -19,6 +26,7 @@ body, html {
     padding: 5px;
     border: 2px solid #ccc;
     border-radius: 5px;
+    opacity: 75%;
 }
 
 .buttons {
@@ -30,6 +38,10 @@ body, html {
     
 }
 
+.buttons button {
+ background-color: rgb(65, 107, 60);
+}
+
 .buttons button:hover {
     background-color: #007bff;
     color:white;
@@ -38,10 +50,17 @@ body, html {
 .weather-details {
     border: 2px solid #007bff; 
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #f1f1f1; 
     border-radius: 10px; 
     width: 620px; 
     height:350px;
     text-align: center; 
+}
+
+.weather-details p {
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    padding-top: 30px;
 }
